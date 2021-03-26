@@ -1,0 +1,772 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    font-size: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../mainpage_background.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body, h1, h2, h2, h4, h5, h6 {
+    font-size-adjust: 0.5;
+}
+
+
+
+/*  FIRST PAGE  */
+
+.mainTitle{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.mainTitle h1{
+    border: 1px solid #fff;
+    opacity: 80%;
+    padding: 0 10px;
+    width: auto;
+    height: 80px;
+    background-color: gray;
+    color: #fff;
+    font-size: 60px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Mainpage button */
+
+.button{
+    transform: translate(645px, 600px);
+}
+
+.btn{
+    border: 1px solid #fff;
+    padding: 21px 40px;
+    color: #fff;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: 0.6s ease;
+}
+
+.btn:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+/* Questionmark1 img and effects */
+
+.questionInfo{
+    
+    position: absolute;
+    width: 100%;
+    cursor: pointer;
+
+}
+
+.questionmark{
+    
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 640px;
+    width: 6%;
+    
+}
+
+.overlay {
+    
+    margin: 0px;
+    position: absolute;
+    top: 610px;
+    right: 100px;
+    opacity: 0;
+    background: #cdcdcd;
+    width: 300px;
+    border: 1px solid gray;
+    border-style: hidden;
+    border-radius: 5%;
+    
+    
+    
+}
+
+.text {
+    
+  color: white;
+  font-size: 20px;
+  top: 43;
+  left: 20%;
+  text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    
+}
+
+.questionInfo:hover .overlay{
+    
+    opacity: 0.8;
+}
+
+
+/* Add button */
+
+.addButton{
+    transform: translate(760px, 2600px);
+}
+
+.addBtn{
+    border: 1px solid #fff;
+    padding: 21px 40px;
+    color: #fff;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: 0.6s ease;
+}
+
+.addBtn:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* SECOND PAGE */
+
+/* .secondTitle{
+    position: absolute;
+    top: 120%;
+    left: 52%;
+    transform: translate(-50%,-50%);
+}
+
+.secondTitle h2{
+    border: 1px solid gray;
+    border-style: hidden;
+    opacity: 80%;
+    width: auto;
+    height: 60px;
+    border-radius: 5%;
+    background-color: gray;
+    color: #fff;
+    font-size: 45px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+} */
+
+/* Questionmark teammedlem info */
+
+.teammemberInfo{
+    
+    position: absolute;
+    width: 100%;
+    cursor: pointer;
+
+}
+
+.teammemberInfoImg{
+    
+    display: block;
+    position: absolute;
+    left: 235px;
+    top: 1950px;
+    width: 6%;
+    
+}
+
+.teammemberOverlay {
+    
+    margin: 0px;
+    position: absolute;
+    top: 1950px;
+    left: 9%;
+    opacity: 0;
+    margin: 0px;
+    background: #cdcdcd;
+    width: 300px;
+    border: 1px solid gray;
+    border-style: hidden;
+    border-radius: 5%;
+    
+    
+    
+}   
+
+.teamTxt {
+    
+  color: white;
+  font-size: 20px;
+  top: 43;
+  left: 20%;
+  text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    
+}
+
+.teammemberInfo:hover .teammemberOverlay{
+    
+    opacity: 1;
+}
+
+/* Questionmark oppgave info */
+
+.oppgaveInfo{
+    
+    position: absolute;
+    width: 100%;
+    cursor: pointer;
+
+}
+
+.oppgaveInfoImg{
+    
+    display: block;
+    position: absolute;
+    right: 845px;
+    top: 1950px;
+    width: 6%;
+    
+}
+
+.oppgaveOverlay {
+    
+    margin: 0px;
+    position: absolute;
+    top: 1965px;
+    left: 396px;
+    opacity: 0;
+    background: #cdcdcd;
+    width: 300px;
+    border: 1px solid gray;
+    border-style: hidden;
+    border-radius: 5%;
+    
+}
+
+.oppgaveTxt {
+    
+  color: white;
+  font-size: 20px;
+  top: 43;
+  left: 23%;
+  text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    
+}
+
+.oppgaveInfo:hover .oppgaveOverlay{
+    
+    opacity: 1;
+}
+
+/* Questionmark date info */
+
+.dateInfo{
+    
+    position: absolute;
+    width: 100%;
+    cursor: pointer;
+
+}
+
+.dateInfoImg{
+    
+    display: block;
+    position: absolute;
+    right: 615px;
+    top: 1950px;
+    width: 6%;
+    
+}
+
+.dateOverlay {
+    
+    margin: 0px;
+    position: absolute;
+    top: 1910px;
+    left: 660px;
+    opacity: 0;
+    background: #cdcdcd;
+    width: 300px;
+    border: 1px solid gray;
+    border-style: hidden;
+    border-radius: 5%;
+    
+}
+
+.dateTxt {
+    
+  color: white;
+  font-size: 20px;
+  top: 43;
+  left: 20%;
+  text-align: center;
+text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    
+}
+
+.dateInfo:hover .dateOverlay{
+    
+    opacity: 1;
+}
+
+/* Kom-i-gang bokser */
+
+h4 {
+	background-color: #eee;
+	font-size: 1.2em;
+	padding-left: 10px;
+}
+
+
+/* Divides the content to three sections */
+.containerBoxes {
+    height: 100%;
+    margin-left: 10%;
+    padding: 5px;
+    display: flex;
+    width: 80%;
+    transform: translateY(2000px);
+}
+
+/* Input boksene  */
+.section {
+    margin-top: 1.5em;
+    margin: 10px;
+	padding: 0px 5px 15px 5px;
+	background: #cdcdcd;
+    opacity: 90%;
+	/* border: 1px solid rgba(202, 202, 202, 0.801); */
+	box-shadow: 1px 1px rgba(9, 30, 66, .25);
+	border-radius: 4px;
+    width: 100%;
+    height: 90%;
+    opacity: 0.9;
+}
+
+.title_sections {
+	margin: .6em;
+	background: #cdcdcd !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.add_entry {
+	background: #eee;
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+/* Input legg til ny teammedlem */
+input,
+input[name=name] {
+	cursor: text;
+	background-color: #fff;
+	border: 1px solid #8ADCFF;
+	margin-top: 5px;
+	color: #333;
+
+}
+
+/* Input legg til arbeidsoppgave*/
+input,
+input[name=task] {
+	cursor: text;
+	background-color: #fff;
+	border: 1px solid #8ADCFF;
+	margin-top: 5px;
+	color: #333;
+}
+
+
+/* knapp for teammedlem og arbeidsoppgave */
+input,
+input[type=submit] {
+	cursor: pointer;
+	font-weight: bold;
+	background-color: #8ADCFF;
+	border: none;
+	color: white;
+	padding: 12px 14px;
+	margin-left: 10px;
+	text-decoration: none;
+	font-size: 16px;
+	float: left;
+}
+
+input,
+input[type=submit]:hover {
+	background-color: #00ccff;
+	border: 1px solid #8ADCFF;
+	color: #fff;
+}
+
+input,
+input[type=submit]:active {
+    border: none;
+    background-color: #00b8e6;
+    outline: none;
+}
+
+/* Bekreft knapp */
+#confirmButton {
+	cursor: pointer;
+	font-weight: bold;
+	background: #8ADCFF !important;
+	border: none;
+	color: white;
+	padding: 12px 14px;
+	margin-left: 10px;
+	text-decoration: none;
+	font-size: 16px;
+	float: left;
+}
+
+#confirmButton:hover {
+	background: #eee !important;
+	border: 1px solid #8ADCFF;
+	color: #8ADCFF;
+}
+
+
+
+.list_title {
+	width: 100%;
+	font-size: 1.2em;
+	float: left;
+	margin: 5px 0px 5px 0px;
+}
+
+/* For added members and tasks */
+.list_items {
+	width: 90%;
+	float: left;
+	font-size: 1em;
+	margin: 4px 10px 4px 10px;
+	padding: 10px;
+	background: #fff;
+	box-shadow: 1px 1px rgba(9, 30, 66, .25);
+	border-radius: 3px;
+}
+
+/* Hover effect for list items */
+.list_items:hover {
+	/* transform: scale(1.02); */
+	/* border: 1px solid rgb(201, 201, 201); */
+	/* box-shadow: 2px 2px 7px rgba(110, 110, 110, 0.5); */
+	background-color: #ddd;
+
+}
+
+/* THIRD PAGE  */
+
+/* Boxes styling  */
+
+.hold {
+  border: solid 5px #ccc;
+}
+
+.empty { 
+    width: 380px;
+    margin: 10px;
+    height: 160px;
+    border: solid 3px white;
+    position: relative;
+}
+
+.unoDosTres {
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+#uno {
+    background: #97C0A0;  
+}
+
+#dos {
+    background: #E9E9AF;
+}
+
+#tres { 
+    background: #E49E9E;
+}
+
+.hovered {
+  background: #f4f4f4;
+  border-style: dashed;
+position: absolute;
+}
+
+/* OERSKRIFT */
+
+/*
+.thirdTitle{
+    position: absolute;
+    top: 220%;
+    left: 51.5%;
+    transform: translate(-50%,-50%);
+}
+
+.thirdTitle h3{
+    border: 1px solid gray;
+    border-style: hidden;
+    opacity: 80%;
+    width: auto;
+    height: 60px;
+    border-radius: 5%;
+    background-color: gray;
+    color: #fff;
+    font-size: 45px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+*/
+
+/* Arrow img */
+
+.arrowImgs {
+}
+
+.arrowImg{ 
+    width: 170px;
+    opacity: 0.8;
+}
+
+.arrowImg2{
+    
+    
+    width: 170px;
+    opacity: 0.8;
+}
+
+.arrowImg3{
+    
+    
+    width: 170px;
+    opacity: 0.8;
+}
+
+
+/* Icons */
+
+.icons {
+    margin: 10px;
+}
+
+.iconImg1{
+    width: 170px;
+    opacity: 0.9;
+    
+}
+
+.iconImg2{
+    margin-top: 20px;
+    width: 120px;
+    opacity: 0.9;
+}
+
+.iconImg3{
+    margin-top: 45px;
+    width: 115px;
+    opacity: 0.9;
+}
+
+/* NAVBAR */
+
+.wrapper .navbar {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    position: fixed;
+}
+
+.wrapper .navbar .hamburger {
+    width: 70px;
+    height: 100%;
+    background: #a9a9a9;
+    padding: 15px 17px;
+    cursor: pointer;
+}
+
+.wrapper .navbar .hamburger div {
+    width: 35px;
+    height: 4px;
+    background: #000;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.wrapper .navbar .menu .title {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Side navbar with icons and effects*/
+
+.wrapper .sidebar {
+    top: 60px;
+    position: fixed;
+    background: #a9a9a9;
+    width: 150px;
+    height: 100%;
+    transition: all 0.3s ease;
+    opacity: 0.7;
+}
+
+.wrapper .sidebar ul li a {
+    display: block;
+    padding: 20px;
+    color: #fff;
+    position: relative;
+    margin-bottom: 1px;
+    white-space: nowrap;
+}
+
+.wrapper .sidebar ul li a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: #fff;
+    display: none;
+}
+
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active {
+    background: #4360b5;
+}
+
+.wrapper .sidebar ul li  a:hover:before,
+.wrapper .sidebar ul li  a.active:before {
+    display: block;
+}
+
+.wrapper .sidebar ul li a span.icon {
+    margin-right: 2px;
+    display: inline-block;
+}
+
+.wrapper .sidebar ul li a span.title {
+    display: inline-block;
+    font-size: 15px;
+}
+
+.wrapper.collapse .sidebar {
+    width: 70px;
+}
+
+.wrapper.collapse .sidebar ul li a {
+    text-align: center;
+}
+
+.wrapper.collapse .sidebar ul li a span.icon {
+    margin: 10;
+}
+
+.wrapper.collapse .sidebar ul li a span.title {
+    display: none;
+}
+
+/* Pil */
+#arrowBtn {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    outline: none;
+    border-radius: 30%;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+
+    color: #fff;
+    background: rgba(255, 255, 255, 0.3); /* Bare å endre farge */
+    cursor: pointer;
+    display: none;
+}
+
+#arrowBtn:active {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/* QA */
+.container{
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+    position: absolute;
+    transform: translate(540px, 3300px);
+}
+
+.container h1 {
+    color: #fff;
+    margin-bottom: 15px;
+    border: 1px solid #fff;
+    opacity: 80%;
+    padding: 0 10px;
+    width: auto;
+    height: 80px;
+    background-color: gray;
+    color: #fff;
+    font-size: 60px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+button.accordion{
+    width: 100%;
+    background-color: whitesmoke;
+    border: none;
+    outline: none;
+    text-align: left;
+    padding: 15px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+}
+
+button.accordion:hover{
+    background-color: #ddd;
+}
+
+.accordion-content{
+    padding: 0 20px;
+    border-left: 1px solid whitesmoke;
+    border-right: 1px solid whitesmoke;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+    background: #fff;
+}
+
+#start_nå {
+    transform: translateY(1800px);
+}
+
+#gå_videre {
+    transform: translateY(3050px);
+}
+
+.extra {
+    transform: translateY(3980px);
+    color: #a9a9a9;
+}
